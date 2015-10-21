@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'moment', '.' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /Users/samgarnham/FirstApp/package.json
+5 verbose readDependencies loading dependencies from /Users/samgarnham/FirstApp/package.json
+6 silly cache add args [ 'moment@^2.10.2', null ]
+7 verbose cache add spec moment@^2.10.2
+8 silly cache add args [ '.', null ]
+9 verbose cache add spec .
+10 silly cache add parsed spec { raw: 'moment@^2.10.2',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'moment',
+10 silly cache add   rawSpec: '^2.10.2',
+10 silly cache add   spec: '>=2.10.2 <3.0.0',
+10 silly cache add   type: 'range' }
+11 silly addNamed moment@>=2.10.2 <3.0.0
+12 verbose addNamed ">=2.10.2 <3.0.0" is a valid semver range for moment
+13 silly addNameRange { name: 'moment', range: '>=2.10.2 <3.0.0', hasData: false }
+14 silly mapToRegistry name moment
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/moment
+18 verbose addNameRange registry:https://registry.npmjs.org/moment not in flight; fetching
+19 silly cache add parsed spec { raw: '.',
+19 silly cache add   scope: null,
+19 silly cache add   name: null,
+19 silly cache add   rawSpec: '.',
+19 silly cache add   spec: '/Users/samgarnham/FirstApp/components',
+19 silly cache add   type: 'local' }
+20 error addLocal Could not install /Users/samgarnham/FirstApp/components
+21 verbose request uri https://registry.npmjs.org/moment
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 4:32:54 PM
+24 verbose request id a66e66e54193ab64
+25 verbose etag "A5HN1TJPF1CXR4SXHNWJHJO08"
+26 http request GET https://registry.npmjs.org/moment
+27 http 304 https://registry.npmjs.org/moment
+28 silly get cb [ 304,
+28 silly get   { date: 'Sun, 18 Oct 2015 20:29:56 GMT',
+28 silly get     via: '1.1 varnish',
+28 silly get     'cache-control': 'max-age=60',
+28 silly get     etag: '"A5HN1TJPF1CXR4SXHNWJHJO08"',
+28 silly get     age: '15',
+28 silly get     connection: 'keep-alive',
+28 silly get     'x-served-by': 'cache-iad2136-IAD',
+28 silly get     'x-cache': 'HIT',
+28 silly get     'x-cache-hits': '1',
+28 silly get     'x-timer': 'S1445200196.679247,VS0,VE0',
+28 silly get     vary: 'Accept' } ]
+29 verbose etag https://registry.npmjs.org/moment from cache
+30 verbose get saving moment to /Users/samgarnham/.npm/registry.npmjs.org/moment/.cache.json
+31 silly addNameRange number 2 { name: 'moment', range: '>=2.10.2 <3.0.0', hasData: true }
+32 silly addNameRange versions [ 'moment',
+32 silly addNameRange   [ '1.0.0',
+32 silly addNameRange     '1.0.1',
+32 silly addNameRange     '1.1.0',
+32 silly addNameRange     '1.1.1',
+32 silly addNameRange     '1.2.0',
+32 silly addNameRange     '1.3.0',
+32 silly addNameRange     '1.4.0',
+32 silly addNameRange     '1.5.0',
+32 silly addNameRange     '1.5.1',
+32 silly addNameRange     '1.6.0',
+32 silly addNameRange     '1.6.1',
+32 silly addNameRange     '1.6.2',
+32 silly addNameRange     '1.7.0',
+32 silly addNameRange     '1.7.1',
+32 silly addNameRange     '1.7.2',
+32 silly addNameRange     '2.0.0',
+32 silly addNameRange     '2.1.0',
+32 silly addNameRange     '2.2.1',
+32 silly addNameRange     '2.3.0',
+32 silly addNameRange     '2.3.1',
+32 silly addNameRange     '2.4.0',
+32 silly addNameRange     '2.5.0',
+32 silly addNameRange     '2.5.1',
+32 silly addNameRange     '2.6.0',
+32 silly addNameRange     '2.7.0',
+32 silly addNameRange     '2.8.1',
+32 silly addNameRange     '2.8.2',
+32 silly addNameRange     '2.8.3',
+32 silly addNameRange     '2.8.4',
+32 silly addNameRange     '2.9.0',
+32 silly addNameRange     '2.10.2',
+32 silly addNameRange     '2.10.3',
+32 silly addNameRange     '2.10.5',
+32 silly addNameRange     '2.10.6' ] ]
+33 silly addNamed moment@2.10.6
+34 verbose addNamed "2.10.6" is a plain semver version for moment
+35 silly cache afterAdd moment@2.10.6
+36 verbose afterAdd /Users/samgarnham/.npm/moment/2.10.6/package/package.json not in flight; writing
+37 verbose afterAdd /Users/samgarnham/.npm/moment/2.10.6/package/package.json written
+38 verbose stack Error: EISDIR, read
+38 verbose stack     at Error (native)
+39 verbose cwd /Users/samgarnham/FirstApp/components
+40 error Darwin 14.5.0
+41 error argv "node" "/usr/local/bin/npm" "install" "moment" "."
+42 error node v0.12.7
+43 error npm  v2.11.3
+44 error code EISDIR
+45 error errno -21
+46 error EISDIR, read
+47 error If you need help, you may report this error at:
+47 error     <https://github.com/npm/npm/issues>
+48 verbose exit [ -21, true ]

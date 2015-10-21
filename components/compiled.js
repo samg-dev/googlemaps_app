@@ -1,0 +1,1 @@
+console.error("Error: Cannot find module '/Users/samgarnham/FirstApp/components/main.js' from '/Users/samgarnham/FirstApp/components'");
